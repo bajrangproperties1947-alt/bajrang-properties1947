@@ -2201,26 +2201,25 @@
                 </div>
                 <div class="hero__search">
                     <div class="hero__search-field">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <select id="searchCity" class="hero__select">
-                            <option value="">Select City</option>
-                            <option value="Mumbai">Mumbai</option>
-                            <option value="Delhi">Delhi</option>
-                            <option value="Bangalore">Bangalore</option>
-                            <option value="Hyderabad">Hyderabad</option>
-                            <option value="Pune">Pune</option>
-                            <option value="Chennai">Chennai</option>
-                            <option value="Kolkata">Kolkata</option>
-                            <option value="Noida">Noida</option>
-                            <option value="Gurgaon">Gurgaon</option>
-                            <option value="Ahmedabad">Ahmedabad</option>
-                            <option value="Jaipur">Jaipur</option>
-                            <option value="Lucknow">Lucknow</option>
-                            <option value="Chandigarh">Chandigarh</option>
-                            <option value="Indore">Indore</option>
-                            <option value="Kochi">Kochi</option>
-                        </select>
-                    </div>
+    <i class="fa-solid fa-location-dot"></i>
+    <select id="stateSelect" class="hero__select">
+        <option value="">Select State</option>
+    </select>
+</div>
+
+<div class="hero__search-field">
+    <i class="fa-solid fa-map"></i>
+    <select id="districtSelect" class="hero__select">
+        <option value="">Select District</option>
+    </select>
+</div>
+
+<div class="hero__search-field">
+    <i class="fa-solid fa-map-pin"></i>
+    <select id="talukaSelect" class="hero__select">
+        <option value="">Select Taluka</option>
+    </select>
+</div>
                     <div class="hero__search-field">
                         <i class="fa-solid fa-building"></i>
                         <select id="searchType" class="hero__select">
@@ -2335,22 +2334,362 @@
                             <div class="form__group">
                                 <label>City <span class="required">*</span></label>
                                 <select id="propCity" required>
-                                    <option value="">Select City</option>
-                                    <option value="Mumbai">Mumbai</option>
-                                    <option value="Delhi">Delhi</option>
-                                    <option value="Bangalore">Bangalore</option>
-                                    <option value="Hyderabad">Hyderabad</option>
-                                    <option value="Pune">Pune</option>
-                                    <option value="Chennai">Chennai</option>
-                                    <option value="Kolkata">Kolkata</option>
-                                    <option value="Noida">Noida</option>
-                                    <option value="Gurgaon">Gurgaon</option>
-                                    <option value="Ahmedabad">Ahmedabad</option>
-                                    <option value="Jaipur">Jaipur</option>
-                                    <option value="Lucknow">Lucknow</option>
-                                    <option value="Chandigarh">Chandigarh</option>
-                                    <option value="Indore">Indore</option>
-                                    <option value="Kochi">Kochi</option>
+                                    <option value="Ahmednagar - Akole">Ahmednagar - Akole</option>
+<option value="Ahmednagar - Jamkhed">Ahmednagar - Jamkhed</option>
+<option value="Ahmednagar - Karjat">Ahmednagar - Karjat</option>
+<option value="Ahmednagar - Kopargaon">Ahmednagar - Kopargaon</option>
+<option value="Ahmednagar - Nevasa">Ahmednagar - Nevasa</option>
+<option value="Ahmednagar - Parner">Ahmednagar - Parner</option>
+<option value="Ahmednagar - Pathardi">Ahmednagar - Pathardi</option>
+<option value="Ahmednagar - Rahata">Ahmednagar - Rahata</option>
+<option value="Ahmednagar - Sangamner">Ahmednagar - Sangamner</option>
+<option value="Ahmednagar - Shevgaon">Ahmednagar - Shevgaon</option>
+<option value="Ahmednagar - Shrirampur">Ahmednagar - Shrirampur</option>
+
+<option value="Akola - Akola">Akola - Akola</option>
+<option value="Akola - Balapur">Akola - Balapur</option>
+<option value="Akola - Barshitakli">Akola - Barshitakli</option>
+<option value="Akola - Murtijapur">Akola - Murtijapur</option>
+<option value="Akola - Patur">Akola - Patur</option>
+<option value="Akola - Telhara">Akola - Telhara</option>
+
+<option value="Amravati - Achalpur">Amravati - Achalpur</option>
+<option value="Amravati - Amravati">Amravati - Amravati</option>
+<option value="Amravati - Anjangaon Surji">Amravati - Anjangaon Surji</option>
+<option value="Amravati - Chandur Bazar">Amravati - Chandur Bazar</option>
+<option value="Amravati - Chandur Railway">Amravati - Chandur Railway</option>
+<option value="Amravati - Daryapur">Amravati - Daryapur</option>
+<option value="Amravati - Dhamangaon Railway">Amravati - Dhamangaon Railway</option>
+<option value="Amravati - Morshi">Amravati - Morshi</option>
+<option value="Amravati - Nandgaon Khandeshwar">Amravati - Nandgaon Khandeshwar</option>
+<option value="Amravati - Warud">Amravati - Warud</option>
+
+<option value="Aurangabad - Aurangabad">Aurangabad - Aurangabad</option>
+<option value="Aurangabad - Gangapur">Aurangabad - Gangapur</option>
+<option value="Aurangabad - Khuldabad">Aurangabad - Khuldabad</option>
+<option value="Aurangabad - Paithan">Aurangabad - Paithan</option>
+<option value="Aurangabad - Phulambri">Aurangabad - Phulambri</option>
+<option value="Aurangabad - Sillod">Aurangabad - Sillod</option>
+<option value="Aurangabad - Soegaon">Aurangabad - Soegaon</option>
+<option value="Aurangabad - Vaijapur">Aurangabad - Vaijapur</option>
+
+<option value="Beed - Ambajogai">Beed - Ambajogai</option>
+<option value="Beed - Ashti">Beed - Ashti</option>
+<option value="Beed - Beed">Beed - Beed</option>
+<option value="Beed - Georai">Beed - Georai</option>
+<option value="Beed - Kaij">Beed - Kaij</option>
+<option value="Beed - Majalgaon">Beed - Majalgaon</option>
+<option value="Beed - Parli">Beed - Parli</option>
+<option value="Beed - Patoda">Beed - Patoda</option>
+<option value="Beed - Shirur Kasar">Beed - Shirur Kasar</option>
+<option value="Beed - Wadwani">Beed - Wadwani</option>
+
+<option value="Bhandara - Bhandara">Bhandara - Bhandara</option>
+<option value="Bhandara - Lakhani">Bhandara - Lakhani</option>
+<option value="Bhandara - Lakhandur">Bhandara - Lakhandur</option>
+<option value="Bhandara - Mohadi">Bhandara - Mohadi</option>
+<option value="Bhandara - Pauni">Bhandara - Pauni</option>
+<option value="Bhandara - Sakoli">Bhandara - Sakoli</option>
+<option value="Bhandara - Tumsar">Bhandara - Tumsar</option>
+
+<option value="Buldhana - Bodwad">Buldhana - Bodwad</option>
+<option value="Buldhana - Buldhana">Buldhana - Buldhana</option>
+<option value="Buldhana - Chikhli">Buldhana - Chikhli</option>
+<option value="Buldhana - Deulgaon Raja">Buldhana - Deulgaon Raja</option>
+<option value="Buldhana - Jalgaon Jamod">Buldhana - Jalgaon Jamod</option>
+<option value="Buldhana - Khamgaon">Buldhana - Khamgaon</option>
+<option value="Buldhana - Lonar">Buldhana - Lonar</option>
+<option value="Buldhana - Malkapur">Buldhana - Malkapur</option>
+<option value="Buldhana - Mehkar">Buldhana - Mehkar</option>
+<option value="Buldhana - Motala">Buldhana - Motala</option>
+<option value="Buldhana - Nandura">Buldhana - Nandura</option>
+<option value="Buldhana - Sangrampur">Buldhana - Sangrampur</option>
+<option value="Buldhana - Shegaon">Buldhana - Shegaon</option>
+<option value="Buldhana - Sindkhed Raja">Buldhana - Sindkhed Raja</option>
+
+<option value="Chandrapur - Ballarpur">Chandrapur - Ballarpur</option>
+<option value="Chandrapur - Bhadravati">Chandrapur - Bhadravati</option>
+<option value="Chandrapur - Chandrapur">Chandrapur - Chandrapur</option>
+<option value="Chandrapur - Chimur">Chandrapur - Chimur</option>
+<option value="Chandrapur - Gondpipri">Chandrapur - Gondpipri</option>
+<option value="Chandrapur - Jiwati">Chandrapur - Jiwati</option>
+<option value="Chandrapur - Korpana">Chandrapur - Korpana</option>
+<option value="Chandrapur - Mul">Chandrapur - Mul</option>
+<option value="Chandrapur - Nagbhid">Chandrapur - Nagbhid</option>
+<option value="Chandrapur - Pombhurna">Chandrapur - Pombhurna</option>
+<option value="Chandrapur - Rajura">Chandrapur - Rajura</option>
+<option value="Chandrapur - Sawali">Chandrapur - Sawali</option>
+<option value="Chandrapur - Sindewahi">Chandrapur - Sindewahi</option>
+
+<option value="Dhule - Dhule">Dhule - Dhule</option>
+<option value="Dhule - Sakri">Dhule - Sakri</option>
+<option value="Dhule - Shirpur">Dhule - Shirpur</option>
+<option value="Dhule - Sindkheda">Dhule - Sindkheda</option>
+<option value="Gadchiroli - Aheri">Gadchiroli - Aheri</option>
+<option value="Gadchiroli - Armori">Gadchiroli - Armori</option>
+<option value="Gadchiroli - Bhamragad">Gadchiroli - Bhamragad</option>
+<option value="Gadchiroli - Chamorshi">Gadchiroli - Chamorshi</option>
+<option value="Gadchiroli - Desaiganj">Gadchiroli - Desaiganj</option>
+<option value="Gadchiroli - Dhanora">Gadchiroli - Dhanora</option>
+<option value="Gadchiroli - Etapalli">Gadchiroli - Etapalli</option>
+<option value="Gadchiroli - Gadchiroli">Gadchiroli - Gadchiroli</option>
+<option value="Gadchiroli - Korchi">Gadchiroli - Korchi</option>
+<option value="Gadchiroli - Kurkheda">Gadchiroli - Kurkheda</option>
+<option value="Gadchiroli - Mulchera">Gadchiroli - Mulchera</option>
+<option value="Gadchiroli - Sironcha">Gadchiroli - Sironcha</option>
+
+<option value="Gondia - Amgaon">Gondia - Amgaon</option>
+<option value="Gondia - Arjuni Morgaon">Gondia - Arjuni Morgaon</option>
+<option value="Gondia - Deori">Gondia - Deori</option>
+<option value="Gondia - Gondia">Gondia - Gondia</option>
+<option value="Gondia - Goregaon">Gondia - Goregaon</option>
+<option value="Gondia - Sadak Arjuni">Gondia - Sadak Arjuni</option>
+<option value="Gondia - Salekasa">Gondia - Salekasa</option>
+<option value="Gondia - Tirora">Gondia - Tirora</option>
+
+<option value="Hingoli - Aundha Nagnath">Hingoli - Aundha Nagnath</option>
+<option value="Hingoli - Basmath">Hingoli - Basmath</option>
+<option value="Hingoli - Hingoli">Hingoli - Hingoli</option>
+<option value="Hingoli - Kalamnuri">Hingoli - Kalamnuri</option>
+<option value="Hingoli - Sengaon">Hingoli - Sengaon</option>
+
+<option value="Jalgaon - Amalner">Jalgaon - Amalner</option>
+<option value="Jalgaon - Bhusawal">Jalgaon - Bhusawal</option>
+<option value="Jalgaon - Bodwad">Jalgaon - Bodwad</option>
+<option value="Jalgaon - Chalisgaon">Jalgaon - Chalisgaon</option>
+<option value="Jalgaon - Dharangaon">Jalgaon - Dharangaon</option>
+<option value="Jalgaon - Erandol">Jalgaon - Erandol</option>
+<option value="Jalgaon - Jalgaon">Jalgaon - Jalgaon</option>
+<option value="Jalgaon - Jamner">Jalgaon - Jamner</option>
+<option value="Jalgaon - Pachora">Jalgaon - Pachora</option>
+<option value="Jalgaon - Parola">Jalgaon - Parola</option>
+<option value="Jalgaon - Raver">Jalgaon - Raver</option>
+<option value="Jalgaon - Yawal">Jalgaon - Yawal</option>
+
+<option value="Jalna - Ambad">Jalna - Ambad</option>
+<option value="Jalna - Badnapur">Jalna - Badnapur</option>
+<option value="Jalna - Bhokardan">Jalna - Bhokardan</option>
+<option value="Jalna - Ghansawangi">Jalna - Ghansawangi</option>
+<option value="Jalna - Jafrabad">Jalna - Jafrabad</option>
+<option value="Jalna - Jalna">Jalna - Jalna</option>
+<option value="Jalna - Mantha">Jalna - Mantha</option>
+<option value="Jalna - Partur">Jalna - Partur</option>
+
+<option value="Kolhapur - Bhudargad">Kolhapur - Bhudargad</option>
+<option value="Kolhapur - Chandgad">Kolhapur - Chandgad</option>
+<option value="Kolhapur - Gadhinglaj">Kolhapur - Gadhinglaj</option>
+<option value="Kolhapur - Hatkanangle">Kolhapur - Hatkanangle</option>
+<option value="Kolhapur - Kagal">Kolhapur - Kagal</option>
+<option value="Kolhapur - Karveer">Kolhapur - Karveer</option>
+<option value="Kolhapur - Panhala">Kolhapur - Panhala</option>
+<option value="Kolhapur - Radhanagari">Kolhapur - Radhanagari</option>
+<option value="Kolhapur - Shahuwadi">Kolhapur - Shahuwadi</option>
+
+<option value="Latur - Ahmadpur">Latur - Ahmadpur</option>
+<option value="Latur - Ausa">Latur - Ausa</option>
+<option value="Latur - Chakur">Latur - Chakur</option>
+<option value="Latur - Deoni">Latur - Deoni</option>
+<option value="Latur - Jalkot">Latur - Jalkot</option>
+<option value="Latur - Latur">Latur - Latur</option>
+<option value="Latur - Nilanga">Latur - Nilanga</option>
+<option value="Latur - Renapur">Latur - Renapur</option>
+<option value="Latur - Udgir">Latur - Udgir</option>
+
+<option value="Mumbai City - Mumbai City">Mumbai City - Mumbai City</option>
+
+<option value="Mumbai Suburban - Andheri">Mumbai Suburban - Andheri</option>
+<option value="Mumbai Suburban - Bandra">Mumbai Suburban - Bandra</option>
+<option value="Mumbai Suburban - Borivali">Mumbai Suburban - Borivali</option>
+<option value="Mumbai Suburban - Kurla">Mumbai Suburban - Kurla</option>
+
+<option value="Nagpur - Hingna">Nagpur - Hingna</option>
+<option value="Nagpur - Kalmeshwar">Nagpur - Kalmeshwar</option>
+<option value="Nagpur - Kamptee">Nagpur - Kamptee</option>
+<option value="Nagpur - Katol">Nagpur - Katol</option>
+<option value="Nagpur - Nagpur Rural">Nagpur - Nagpur Rural</option>
+<option value="Nagpur - Nagpur Urban">Nagpur - Nagpur Urban</option>
+<option value="Nagpur - Narkhed">Nagpur - Narkhed</option>
+<option value="Nagpur - Parseoni">Nagpur - Parseoni</option>
+<option value="Nagpur - Ramtek">Nagpur - Ramtek</option>
+<option value="Nagpur - Saoner">Nagpur - Saoner</option>
+<option value="Nagpur - Umred">Nagpur - Umred</option>
+
+<option value="Nanded - Ardhapur">Nanded - Ardhapur</option>
+<option value="Nanded - Bhokar">Nanded - Bhokar</option>
+<option value="Nanded - Biloli">Nanded - Biloli</option>
+<option value="Nanded - Dharmabad">Nanded - Dharmabad</option>
+<option value="Nanded - Himayatnagar">Nanded - Himayatnagar</option>
+<option value="Nanded - Kandhar">Nanded - Kandhar</option>
+<option value="Nanded - Kinwat">Nanded - Kinwat</option>
+<option value="Nanded - Loha">Nanded - Loha</option>
+<option value="Nanded - Mahur">Nanded - Mahur</option>
+<option value="Nanded - Mukhed">Nanded - Mukhed</option>
+<option value="Nanded - Naigaon">Nanded - Naigaon</option>
+<option value="Nanded - Nanded">Nanded - Nanded</option>
+<option value="Nandurbar - Akkalkuwa">Nandurbar - Akkalkuwa</option>
+<option value="Nandurbar - Akrani">Nandurbar - Akrani</option>
+<option value="Nandurbar - Nandurbar">Nandurbar - Nandurbar</option>
+<option value="Nandurbar - Shahada">Nandurbar - Shahada</option>
+<option value="Nandurbar - Taloda">Nandurbar - Taloda</option>
+
+<option value="Nashik - Baglan">Nashik - Baglan</option>
+<option value="Nashik - Chandwad">Nashik - Chandwad</option>
+<option value="Nashik - Deola">Nashik - Deola</option>
+<option value="Nashik - Dindori">Nashik - Dindori</option>
+<option value="Nashik - Igatpuri">Nashik - Igatpuri</option>
+<option value="Nashik - Kalwan">Nashik - Kalwan</option>
+<option value="Nashik - Malegaon">Nashik - Malegaon</option>
+<option value="Nashik - Nandgaon">Nashik - Nandgaon</option>
+<option value="Nashik - Nashik">Nashik - Nashik</option>
+<option value="Nashik - Peint">Nashik - Peint</option>
+<option value="Nashik - Sinnar">Nashik - Sinnar</option>
+<option value="Nashik - Trimbakeshwar">Nashik - Trimbakeshwar</option>
+<option value="Nashik - Yeola">Nashik - Yeola</option>
+
+<option value="Osmanabad - Bhoom">Osmanabad - Bhoom</option>
+<option value="Osmanabad - Kalamb">Osmanabad - Kalamb</option>
+<option value="Osmanabad - Lohara">Osmanabad - Lohara</option>
+<option value="Osmanabad - Osmanabad">Osmanabad - Osmanabad</option>
+<option value="Osmanabad - Paranda">Osmanabad - Paranda</option>
+<option value="Osmanabad - Tuljapur">Osmanabad - Tuljapur</option>
+<option value="Osmanabad - Umarga">Osmanabad - Umarga</option>
+<option value="Osmanabad - Washind">Osmanabad - Washind</option>
+
+<option value="Palghar - Dahanu">Palghar - Dahanu</option>
+<option value="Palghar - Jawhar">Palghar - Jawhar</option>
+<option value="Palghar - Mokhada">Palghar - Mokhada</option>
+<option value="Palghar - Palghar">Palghar - Palghar</option>
+<option value="Palghar - Talasari">Palghar - Talasari</option>
+<option value="Palghar - Vasai">Palghar - Vasai</option>
+<option value="Palghar - Vikramgad">Palghar - Vikramgad</option>
+<option value="Palghar - Wada">Palghar - Wada</option>
+
+<option value="Parbhani - Gangakhed">Parbhani - Gangakhed</option>
+<option value="Parbhani - Jintur">Parbhani - Jintur</option>
+<option value="Parbhani - Manwath">Parbhani - Manwath</option>
+<option value="Parbhani - Palam">Parbhani - Palam</option>
+<option value="Parbhani - Parbhani">Parbhani - Parbhani</option>
+<option value="Parbhani - Pathri">Parbhani - Pathri</option>
+<option value="Parbhani - Purna">Parbhani - Purna</option>
+<option value="Parbhani - Sonpeth">Parbhani - Sonpeth</option>
+
+<option value="Pune - Ambegaon">Pune - Ambegaon</option>
+<option value="Pune - Baramati">Pune - Baramati</option>
+<option value="Pune - Bhor">Pune - Bhor</option>
+<option value="Pune - Daund">Pune - Daund</option>
+<option value="Pune - Haveli">Pune - Haveli</option>
+<option value="Pune - Indapur">Pune - Indapur</option>
+<option value="Pune - Junnar">Pune - Junnar</option>
+<option value="Pune - Khed">Pune - Khed</option>
+<option value="Pune - Maval">Pune - Maval</option>
+<option value="Pune - Mulshi">Pune - Mulshi</option>
+<option value="Pune - Purandar">Pune - Purandar</option>
+<option value="Pune - Shirur">Pune - Shirur</option>
+<option value="Pune - Velhe">Pune - Velhe</option>
+
+<option value="Raigad - Alibag">Raigad - Alibag</option>
+<option value="Raigad - Karjat">Raigad - Karjat</option>
+<option value="Raigad - Khalapur">Raigad - Khalapur</option>
+<option value="Raigad - Mahad">Raigad - Mahad</option>
+<option value="Raigad - Mangaon">Raigad - Mangaon</option>
+<option value="Raigad - Murud">Raigad - Murud</option>
+<option value="Raigad - Panvel">Raigad - Panvel</option>
+<option value="Raigad - Pen">Raigad - Pen</option>
+<option value="Raigad - Poladpur">Raigad - Poladpur</option>
+<option value="Raigad - Shrivardhan">Raigad - Shrivardhan</option>
+<option value="Raigad - Sudhagad">Raigad - Sudhagad</option>
+<option value="Raigad - Tala">Raigad - Tala</option>
+
+<option value="Ratnagiri - Chiplun">Ratnagiri - Chiplun</option>
+<option value="Ratnagiri - Dapoli">Ratnagiri - Dapoli</option>
+<option value="Ratnagiri - Devgad">Ratnagiri - Devgad</option>
+<option value="Ratnagiri - Guhagar">Ratnagiri - Guhagar</option>
+<option value="Ratnagiri - Khed">Ratnagiri - Khed</option>
+<option value="Ratnagiri - Lanja">Ratnagiri - Lanja</option>
+<option value="Ratnagiri - Mandangad">Ratnagiri - Mandangad</option>
+<option value="Ratnagiri - Rajapur">Ratnagiri - Rajapur</option>
+<option value="Ratnagiri - Ratnagiri">Ratnagiri - Ratnagiri</option>
+<option value="Ratnagiri - Sangameshwar">Ratnagiri - Sangameshwar</option>
+
+<option value="Sangli - Atpadi">Sangli - Atpadi</option>
+<option value="Sangli - Jat">Sangli - Jat</option>
+<option value="Sangli - Kadegaon">Sangli - Kadegaon</option>
+<option value="Sangli - Khanapur">Sangli - Khanapur</option>
+<option value="Sangli - Kavathemahankal">Sangli - Kavathemahankal</option>
+<option value="Sangli - Miraj">Sangli - Miraj</option>
+<option value="Sangli - Palus">Sangli - Palus</option>
+<option value="Sangli - Shirala">Sangli - Shirala</option>
+<option value="Sangli - Tasgaon">Sangli - Tasgaon</option>
+<option value="Sangli - Walwa">Sangli - Walwa</option>
+
+<option value="Satara - Jaoli">Satara - Jaoli</option>
+<option value="Satara - Karad">Satara - Karad</option>
+<option value="Satara - Khatav">Satara - Khatav</option>
+<option value="Satara - Koregaon">Satara - Koregaon</option>
+<option value="Satara - Mahabaleshwar">Satara - Mahabaleshwar</option>
+<option value="Satara - Maan">Satara - Maan</option>
+<option value="Satara - Patan">Satara - Patan</option>
+<option value="Satara - Phaltan">Satara - Phaltan</option>
+<option value="Satara - Satara">Satara - Satara</option>
+<option value="Satara - Wai">Satara - Wai</option>
+
+<option value="Sindhudurg - Devgad">Sindhudurg - Devgad</option>
+<option value="Sindhudurg - Dodamarg">Sindhudurg - Dodamarg</option>
+<option value="Sindhudurg - Kankavli">Sindhudurg - Kankavli</option>
+<option value="Sindhudurg - Kudal">Sindhudurg - Kudal</option>
+<option value="Sindhudurg - Malvan">Sindhudurg - Malvan</option>
+<option value="Sindhudurg - Sawantwadi">Sindhudurg - Sawantwadi</option>
+<option value="Sindhudurg - Vaibhavwadi">Sindhudurg - Vaibhavwadi</option>
+<option value="Sindhudurg - Vengurla">Sindhudurg - Vengurla</option>
+
+<option value="Solapur - Akkalkot">Solapur - Akkalkot</option>
+<option value="Solapur - Barshi">Solapur - Barshi</option>
+<option value="Solapur - Karmala">Solapur - Karmala</option>
+<option value="Solapur - Madha">Solapur - Madha</option>
+<option value="Solapur - Malshiras">Solapur - Malshiras</option>
+<option value="Solapur - Mangalvedhe">Solapur - Mangalvedhe</option>
+<option value="Solapur - Mohol">Solapur - Mohol</option>
+<option value="Solapur - Pandharpur">Solapur - Pandharpur</option>
+<option value="Solapur - Sangola">Solapur - Sangola</option>
+<option value="Solapur - Solapur North">Solapur - Solapur North</option>
+<option value="Solapur - Solapur South">Solapur - Solapur South</option>
+
+<option value="Thane - Ambarnath">Thane - Ambarnath</option>
+<option value="Thane - Bhiwandi">Thane - Bhiwandi</option>
+<option value="Thane - Kalyan">Thane - Kalyan</option>
+<option value="Thane - Murbad">Thane - Murbad</option>
+<option value="Thane - Shahapur">Thane - Shahapur</option>
+<option value="Thane - Thane">Thane - Thane</option>
+<option value="Thane - Ulhasnagar">Thane - Ulhasnagar</option>
+
+<option value="Wardha - Arvi">Wardha - Arvi</option>
+<option value="Wardha - Ashti">Wardha - Ashti</option>
+<option value="Wardha - Deoli">Wardha - Deoli</option>
+<option value="Wardha - Hinganghat">Wardha - Hinganghat</option>
+<option value="Wardha - Karanja">Wardha - Karanja</option>
+<option value="Wardha - Samudrapur">Wardha - Samudrapur</option>
+<option value="Wardha - Seloo">Wardha - Seloo</option>
+<option value="Wardha - Wardha">Wardha - Wardha</option>
+
+<option value="Washim - Karanja">Washim - Karanja</option>
+<option value="Washim - Malegaon">Washim - Malegaon</option>
+<option value="Washim - Mangrulpir">Washim - Mangrulpir</option>
+<option value="Washim - Manora">Washim - Manora</option>
+<option value="Washim - Risod">Washim - Risod</option>
+<option value="Washim - Washim">Washim - Washim</option>
+
+<option value="Yavatmal - Arni">Yavatmal - Arni</option>
+<option value="Yavatmal - Digras">Yavatmal - Digras</option>
+<option value="Yavatmal - Ghatanji">Yavatmal - Ghatanji</option>
+<option value="Yavatmal - Kalamb">Yavatmal - Kalamb</option>
+<option value="Yavatmal - Mahagaon">Yavatmal - Mahagaon</option>
+<option value="Yavatmal - Ner">Yavatmal - Ner</option>
+<option value="Yavatmal - Pandharkawada">Yavatmal - Pandharkawada</option>
+<option value="Yavatmal - Pusad">Yavatmal - Pusad</option>
+<option value="Yavatmal - Ralegaon">Yavatmal - Ralegaon</option>
+<option value="Yavatmal - Umarkhed">Yavatmal - Umarkhed</option>
+<option value="Yavatmal - Wani">Yavatmal - Wani</option>
+<option value="Yavatmal - Yavatmal">Yavatmal - Yavatmal</option>
                                 </select>
                                 <div class="error-text">Please select a city</div>
                             </div>
@@ -4632,7 +4971,7 @@ images: ["https://res.cloudinary.com/edin0wu0/image/upload/f_auto,q_auto/WhatsAp
 }
 ];
 
-
+ await loadLocations();
 
 STATE.filteredProperties = [...STATE.properties];
 renderAll();
