@@ -4647,6 +4647,7 @@ async function loadSearchCities() {
         const citySelect = $("#searchCity");
 
         if (!citySelect) return;
+        citySelect.innerHTML = '<option value="">Select City</option>';
 
         Object.keys(districts).forEach(district => {
             districts[district].forEach(taluka => {
