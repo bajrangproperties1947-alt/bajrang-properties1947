@@ -4643,6 +4643,26 @@ ownerPhone: "9270273749",
 featured: true,
 images: ["images/harangul01.jpeg", "images/harangul02.jpeg", "images/harangul03.jpeg"
 ]
+},
+{
+id: "08",
+title: "FLAT FOR SALE",
+type: "Flat",
+status: "Sale",
+price: 8500000,
+city: "Pune",
+address: "Ambegaon",
+bhk: 2,
+bathrooms: 2,
+builtupArea: 1600,
+furnishing: "furnished",
+availability: "Available",
+ownerName: "bajrang properties",
+ownerPhone: "9270273749",
+featured: true,
+images: ["images/ambegaon01.jpeg", "images/ambegaon02.jpeg", "images/ambegaon03.jpeg","images/ambegaon04.jpeg",
+ "images/ambegaon05.jpeg","images/ambegaon06.jpeg","imhages/ambegaon07.jpeg","images/ambegaon08.jpeg","ambegaon09.jpeg"
+]
 }
 ];
 
@@ -4667,28 +4687,26 @@ updateHeroCount();
         }
 // ✅ Load Maharashtra Cities in Hero Search
 async function loadSearchCities() {
-    try {
-        const response = await fetch('maharashtra.json');
-        const data = await response.json();
+  try {
+    const response = await fetch('./maharashtra.json');
+    const data = await response.json();
 
-        const districts = data.Maharashtra;
-        const citySelect = $("#searchCity");
+    const districts = data.Maharashtra; // array
+    const citySelect = document.getElementById("searchCity");
+    if (!citySelect) return;
 
-        if (!citySelect) return;
-        citySelect.innerHTML = '<option value="">Select City</option>';
+    citySelect.innerHTML = '<option value="">Select District</option>';
 
-        Object.keys(districts).forEach(district => {
-            districts[district].forEach(taluka => {
-                const option = document.createElement("option");
-                option.value = district + " - " + taluka;
-                option.textContent = district + " - " + taluka;
-                citySelect.appendChild(option);
-            });
-        });
+    districts.forEach(district => {
+      const option = document.createElement("option");
+      option.value = district;
+      option.textContent = district;
+      citySelect.appendChild(option);
+    });
 
-    } catch (error) {
-        console.error("City load error:", error);
-    }
+  } catch (error) {
+    console.error("District load error:", error);
+  }
 }
         // ============ START ============
         document.addEventListener('DOMContentLoaded', init);
